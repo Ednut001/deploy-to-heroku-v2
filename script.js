@@ -11,13 +11,13 @@ document.getElementById("githubForm").addEventListener("submit", function (e) {
         (repo) => repo.full_name === "Ednut001/Ednut-Md" && repo.fork
       );
       if (forkedRepo) {
-        window.location.href = "https://www.heroku.com/deploy/?template=https://github.com/Ednut001/Ednut-Md";
+        window.location.href = "https://dashboard.heroku.com/new?template=https://github.com/Ednut001/Ednut-Md&button-url=https://github.comEdnut001&version=1.0.0&auther=ednut001";
       } else {
         window.location.href = "https://github.com/Ednut001/Ednut-Md/fork";
       }
     })
     .catch((error) => {
-      messageDiv.textContent = "Github UserName Doesn't Exist sir fork repo and retry.";
+      messageDiv.textContent = "Github UserName Doesn't Exist sir.";
       console.error("Error:", error);
     });
 });
