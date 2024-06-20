@@ -11,7 +11,7 @@ document.getElementById("githubForm").addEventListener("submit", function (e) {
         (repo) => repo.full_name === "Ednut001/Ednut-Md" && repo.fork
       );
       if (forkedRepo) {
-        window.location.href = "https://www.heroku.com/deploy/?template=";
+        window.location.href = "https://www.heroku.com/deploy/?template=https://github.com/Ednut001/Ednut-Md";
       } else {
         window.location.href = "https://github.com/Ednut001/Ednut-Md/fork";
       }
