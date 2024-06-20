@@ -8,16 +8,16 @@ document.getElementById("githubForm").addEventListener("submit", function (e) {
     .then((response) => response.json())
     .then((data) => {
       const forkedRepo = data.find(
-        (repo) => repo.full_name === "AstroLegends/wabot" && repo.fork
+        (repo) => repo.full_name === "Ednut001/Ednut-Md" && repo.fork
       );
       if (forkedRepo) {
         window.location.href = "https://www.heroku.com/deploy/?template=";
       } else {
-        window.location.href = "https://github.com/AstroLegends/wabot/fork";
+        window.location.href = "https://github.com/Ednut001/Ednut-Md/fork";
       }
     })
     .catch((error) => {
-      messageDiv.textContent = "Lol Github UserName Doesn't Exist.";
+      messageDiv.textContent = "Github UserName Doesn't Exist sir fork repo and retry.";
       console.error("Error:", error);
     });
 });
